@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import List from "./List/List1";
+import List from "./List/List";
 
 useEffect = (() => {}, []);
 export const App = () => {
