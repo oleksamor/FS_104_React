@@ -1,4 +1,8 @@
 export const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <List />
+    </div>
+  );
 };
 //https://hn.algolia.com/api/v1/
