@@ -1,13 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import { Header } from "./Header/Header";
+import Header from "./Header/Header";
+import NotFound from "../pages/NotFound/NotFound";
+import Home from "../pages/Home/Home";
+import About from "../pages/About/About";
 
 export const App = () => {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<h1>Home page</h1>} />
-        <Route path="/about" element={<h1>About page</h1>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
